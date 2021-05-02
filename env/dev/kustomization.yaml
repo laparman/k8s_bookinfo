@@ -5,5 +5,5 @@ kind: Kustomization
 resources:
 - ../../base
 images:
-- name: wonjoyoo/tkg
+- name: wonjoyoo/examples-bookinfo-productpage-v1
   newTag: "48"
