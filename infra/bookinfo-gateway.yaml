@@ -14,6 +14,21 @@ spec:
     - "*"
 ---
 apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: hello-gateway
+spec:
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+  - port:
+      number: 8080
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+---
+apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: bookinfo
@@ -50,11 +65,11 @@ spec:
   hosts:
   - "*"
   gateways:
-  - bookinfo-gateway
+  - hello-gateway
   http:
   - match:
     - uri:
-        exact: /hello
+        exact: /
     route:
     - destination:
         host: productpage
