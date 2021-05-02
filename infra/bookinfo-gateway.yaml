@@ -34,6 +34,8 @@ spec:
         exact: /logout
     - uri:
         prefix: /api/v1/products
+    - uri:
+        prefix: /
     route:
     - destination:
         host: productpage
