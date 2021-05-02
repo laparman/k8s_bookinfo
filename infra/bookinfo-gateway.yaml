@@ -72,6 +72,6 @@ spec:
         exact: /
     route:
     - destination:
-        host: productpage
+        host: hello
         port:
           number: 80 
