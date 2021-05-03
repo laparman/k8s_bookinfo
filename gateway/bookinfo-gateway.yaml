@@ -42,11 +42,11 @@ spec:
   - match:
     - uri:
         exact: /
-    - uri:
-        exact: /hang
     route:
     - destination:
-        host: hello
-        port:
-          number: 8080
+        host: demo
+      weight: 100
+    - desination:
+        host : demo-canary
+      weight: 0
 ---
