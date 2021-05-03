@@ -39,6 +39,8 @@ spec:
         host: productpage
         port:
           number: 9080
+  http:
+  - name: primary
   - match:
     - uri:
         exact: /
