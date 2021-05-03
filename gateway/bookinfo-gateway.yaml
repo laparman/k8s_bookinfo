@@ -42,6 +42,8 @@ spec:
   - match:
     - uri:
         exact: /
+    - uri:
+        exact: /hang
     route:
     - destination:
         host: hello
