@@ -39,9 +39,6 @@ spec:
         host: productpage
         port:
           number: 9080
-  - vs-gateway
-  http:
-  - name: primary
   - match:
     - uri:
         exact: /
