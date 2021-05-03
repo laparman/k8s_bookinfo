@@ -34,8 +34,6 @@ spec:
         exact: /logout
     - uri:
         prefix: /api/v1/products
-    - uri:
-        prefix: /
     route:
     - destination:
         host: productpage
@@ -43,7 +41,7 @@ spec:
           number: 9080
   - match:
     - uri:
-        prefix: /hello
+        prefix: /
     route:
     - destination:
         host: hello
