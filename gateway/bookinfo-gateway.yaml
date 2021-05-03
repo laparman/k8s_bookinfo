@@ -46,7 +46,7 @@ spec:
     - destination:
         host: demo
       weight: 100
-    - desination:
+    - destination:
         host : demo-canary
       weight: 0
 ---
