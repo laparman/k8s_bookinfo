@@ -69,7 +69,7 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /
+        prefix: /hello
     route:
     - destination:
         host: hello
